@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Datenschutz Verwaltungsapp</title>
+<title>Datenschutz Därligen</title>
 <style>
   :root { color-scheme: light dark; --text: #1d1d1f; --leise: #6e6e73; --grund: #fff; }
   @media (prefers-color-scheme: dark) { :root { --text: #f5f5f7; --leise: #a1a1a6; --grund: #000; } }
@@ -19,29 +19,33 @@
 <body>
 <main>
 <h1>Datenschutzerklärung</h1>
-<p class="stand">Verwaltungsapp für das Familienhaus · Stand 1. Oktober 2026</p>
+<p class="stand">App «Därligen» für das Familienhaus · Stand 5. Oktober 2026</p>
 
-<p>Die Verwaltungsapp ist eine private App für die Familienmitglieder, die das Haus gemeinsam
+<p>Die App «Därligen» ist eine private App für die Familienmitglieder, die das Haus gemeinsam
 nutzen (etwa 10 bis 20 Personen). Sie dient nur der Organisation des Hauses. Es gibt keine
 Werbung, kein Tracking und keine Weitergabe an Dritte zu eigenen Zwecken.</p>
 
 <h2>Verantwortlich</h2>
-<p>Verantwortlich ist die Person, die die App für die Familie betreibt (Admin der App).
-Fragen zum Datenschutz richtest du über den Chat in der App an den Admin. Eine eigene
-Kontaktadresse wird hier vor der Veröffentlichung im App Store ergänzt.</p>
+<p>Verantwortlich ist ein Mitglied der Familie, das die App für alle betreibt.
+Fragen zum Datenschutz richtest du an <a href="mailto:darligenap@gmail.com">darligenap@gmail.com</a>.</p>
 
 <h2>Welche Daten die App bearbeitet</h2>
 <ul>
-  <li><strong>Konto:</strong> E-Mail-Adresse, Name, freiwilliges Profilbild und Passwort (nur verschlüsselt gespeichert).
+  <li><strong>Konto:</strong> E-Mail-Adresse, Name, freiwilliges Profilbild und Passwort (nur verschlüsselt gespeichert),
+    dein Familienstamm und die Farbe, in der deine Einträge erscheinen.
     Konten legt ein Admin an; man kann sich nicht selbst registrieren.</li>
   <li><strong>Belegungsplan:</strong> wer das Haus wann belegt, mit Titel und Notiz.</li>
   <li><strong>Chat:</strong> Nachrichten und Fotos, die du sendest.</li>
-  <li><strong>Anleitungen:</strong> Texte, Fotos und PDF-Dateien, die du erstellst oder vorschlägst.</li>
+  <li><strong>Anleitungen:</strong> Texte, Fotos und PDF-Dateien, die du erstellst oder vorschlägst.
+    Veröffentlichte Anleitungen zeigen keinen Namen; bei einem Vorschlag sehen die Admins, von wem er kommt.</li>
   <li><strong>Anträge und Abstimmungen:</strong> Anträge mit Beschreibung, Foto und erwarteten Kosten
     sowie deine Stimme. Abstimmungen sind offen: Alle Mitglieder sehen, wer wie gestimmt hat.</li>
   <li><strong>Kalender-Abo:</strong> ein persönlicher, geheimer Link, über den dein iPhone den
     Belegungsplan als Kalender abonnieren kann.</li>
   <li><strong>Blockierungen:</strong> welche Personen du blockiert hast. Das sieht nur du.</li>
+<li><strong>Mitteilungen:</strong> die Kennung deines iPhones für Mitteilungen und deine zwei Schalter
+    (Chat, Abstimmungen), siehe unten.</li>
+<li><strong>Absturz- und Diagnoseberichte:</strong> siehe unten.</li>
 </ul>
 <p>Alle Inhalte sind nur für angemeldete Mitglieder sichtbar, nie öffentlich.</p>
 
@@ -50,32 +54,66 @@ Kontaktadresse wird hier vor der Veröffentlichung im App Store ergänzt.</p>
 das erlaubst. Die App sieht nur die Fotos, die du auswählst, nicht deine ganze Mediathek. Vor dem Hochladen verkleinert die App jedes Foto auf
 dem iPhone und entfernt den Aufnahmeort.</p>
 
+<h2>Mitteilungen</h2>
+<p>Wenn du Mitteilungen erlaubst, meldet die App die Kennung deines iPhones an unseren Server.
+Bei einer neuen Chat-Nachricht, einer neuen Abstimmung und einem Abstimmungsergebnis schickt der
+Server eine Mitteilung über den Apple Push Notification Service (Apple) an dein iPhone. Der Text der
+Chat-Nachricht ist dann Teil der Mitteilung und läuft deshalb über Apple. Du kannst Chat- und
+Abstimmungs-Mitteilungen im Profil getrennt ausschalten oder in den iOS-Einstellungen ganz sperren.
+Die Kennung wird beim Abmelden und beim Löschen deines Kontos entfernt.</p>
+
+<h2>Absturz- und Diagnoseberichte</h2>
+<p>Stürzt die App ab oder hängt sie, schickt iOS einen Bericht an die App, und diese legt ihn auf
+dem Server ab. Er enthält Programmstellen, die Version der App, die iOS-Version und den
+Gerätetyp, aber keine Inhalte deiner Nachrichten, Fotos oder Einträge. Nur die Admins sehen diese
+Berichte; sie dienen dazu, Fehler zu finden.</p>
+
 <h2>Wo die Daten liegen</h2>
 <p>Die Daten liegen bei Supabase (Supabase Inc.) in einem Rechenzentrum in Zürich (Region
 eu-central-2, betrieben von Amazon Web Services). Supabase bearbeitet die Daten nur in unserem
-Auftrag. Die Verbindung zwischen App und Server ist verschlüsselt.
+Auftrag. Die Verbindung zwischen App und Server ist verschlüsselt. Wie bei jedem Server fallen dort
+kurzzeitig technische Zugriffsdaten an (zum Beispiel Zeitpunkt und IP-Adresse eines Zugriffs).
 Die App wird über Apple (TestFlight bzw. App Store) verteilt; dafür gelten die
 Datenschutzbestimmungen von Apple.</p>
+<p>Wenn du dein Passwort vergisst, schickt die App dir eine E-Mail mit einem Code. Diese Mail
+verschickt der Server über ein Gmail-Konto (Google), das nur für die App eingerichtet ist. Google
+sieht dabei deine E-Mail-Adresse und den Code.</p>
 
 <h2>Wie lange die Daten bleiben</h2>
 <p>Deine Daten bleiben gespeichert, solange dein Konto besteht oder bis du einzelne Beiträge
-löschst. Eine Sicherungskopie der Datenbank hält Supabase höchstens einige Tage.</p>
+löschst.</p>
+<p><strong>Sicherung:</strong> Der Betreiber sichert die Daten einmal pro Woche auf einem eigenen,
+verschlüsselten Rechner: die Datenbank mit allen Konten und Inhalten sowie alle Fotos und
+PDF-Dateien. Diese Sicherungen werden 30 Tage aufbewahrt und danach gelöscht. Inhalte, die du
+löschst (auch dein ganzes Konto), verschwinden deshalb in der Sicherung spätestens nach 30 Tagen.</p>
 
 <h2>Konto löschen</h2>
-<p>Du kannst dein Konto jederzeit selbst in der App löschen: <em>Einstellungen → Konto löschen</em>.
+<p>Du kannst dein Konto jederzeit selbst in der App löschen: <em>Profil → Konto löschen</em>.
 Dabei werden sofort gelöscht: dein Konto, Profil und Profilbild, deine Nachrichten und Fotos, Belegungen,
-Anträge, Stimmen, Anleitungsvorschläge, dein Kalender-Abo und deine Blockierungen.
-Bereits veröffentlichte Anleitungen bleiben für die anderen erhalten, aber ohne deinen Namen.
-Wird eine deiner Stimmen gelöscht, ändert sich das Ergebnis der betreffenden Abstimmung.</p>
+laufende Abstimmungen und Traktanden, deine Stimmen, Anleitungsvorschläge, dein Kalender-Abo und deine
+Blockierungen.
+Zwei Dinge bleiben für die anderen erhalten, aber ohne deinen Namen: bereits veröffentlichte Anleitungen
+und Abstimmungen, deren Frist abgelaufen ist (sie sind Beschlüsse der Familie; ihr Foto wird gelöscht).
+Das Ergebnis abgeschlossener Abstimmungen bleibt, wie es war, auch wenn deine Stimme gelöscht wird.
+Deine Mitteilungs-Kennung wird ebenfalls gelöscht. Die Sicherungen (siehe oben) werden danach
+spätestens nach 30 Tagen bereinigt.</p>
 
-<h2>Deine Rechte</h2>
-<p>Du kannst Auskunft über deine Daten verlangen und sie berichtigen oder löschen lassen
-(Schweizer Datenschutzgesetz, für Personen in der EU auch die DSGVO). Melde dich dafür beim
-Admin der App. Du kannst dich ausserdem beim Eidgenössischen Datenschutz- und
-Öffentlichkeitsbeauftragten (EDÖB) beschweren.</p>
+<h2>Rechtlicher Rahmen</h2>
+<p>Die App wird ausschliesslich im privaten Familienkreis betrieben und dient nur der Organisation
+des gemeinsamen Hauses. Nach Auffassung des Betreibers handelt es sich um eine Bearbeitung zum
+persönlichen Gebrauch, auf die das Schweizer Datenschutzgesetz nicht anwendbar ist (Art. 2 Abs. 2
+lit. a DSG); die DSGVO ist mangels Bezug zur EU ebenfalls nicht anwendbar. Diese Erklärung
+beschreibt deshalb freiwillig, welche Daten die App bearbeitet und wo sie liegen; sie begründet
+keine zusätzlichen Ansprüche.</p>
+<p>Dein Konto und deine Beiträge kannst du jederzeit selbst in der App löschen. Bei Fragen
+erreichst du den Betreiber unter <a href="mailto:darligenap@gmail.com">darligenap@gmail.com</a>
+(in der App: <em>Profil → Kontakt</em>).</p>
+<p>Meldest du einen Beitrag (<em>Melden …</em> im Menü einer Nachricht, eines Antrags oder einer
+Anleitung), öffnet die App eine E-Mail an diese Adresse mit Art, Kennung, Verfasser und Text des
+Beitrags. Gesendet wird sie erst, wenn du sie in deinem Mailprogramm abschickst.</p>
 
 <h2>Änderungen</h2>
-<p>Kommen neue Funktionen dazu, etwa Mitteilungen aufs iPhone, wird diese Erklärung angepasst.
+<p>Kommen neue Funktionen dazu, wird diese Erklärung angepasst.
 Das Datum oben zeigt den aktuellen Stand.</p>
 </main>
 </body>
