@@ -19,7 +19,7 @@
 <body>
 <main>
 <h1>Datenschutzerklärung</h1>
-<p class="stand">App «Därligen» für das Familienhaus · Stand 17. Oktober 2026</p>
+<p class="stand">App «Därligen» für das Familienhaus · Stand 28. Oktober 2026</p>
 
 <p>Die App «Därligen» ist eine private App für die Familienmitglieder, die das Haus gemeinsam
 nutzen (etwa 10 bis 20 Personen). Sie dient nur der Organisation des Hauses. Es gibt keine
@@ -38,7 +38,11 @@ Fragen zum Datenschutz richtest du an <a href="mailto:darligenapp@gmail.com">dar
     und deine E-Mail-Adresse. Lehnt ein Admin ab oder bleibt die Anfrage 30 Tage offen, wird das Konto
     samt Anfrage gelöscht.</li>
   <li><strong>Belegungsplan:</strong> wer das Haus wann belegt, mit Titel und Notiz.</li>
-  <li><strong>Chat:</strong> Nachrichten und Fotos, die du sendest.</li>
+  <li><strong>Termine am Haus:</strong> Termine wie Grünabfuhr oder Handwerker mit Art, Titel, Notiz und Tagen;
+    dabei steht, wer den Termin zuletzt geändert hat.</li>
+  <li><strong>Chat:</strong> Nachrichten und Fotos, die du sendest, Erwähnungen (@Name) und Linkvorschauen
+    (siehe unten). Ausserdem, bis wann du den Chat gelesen hast: Daraus entsteht die Zahl am App-Symbol,
+    gleich auf allen deinen Geräten.</li>
   <li><strong>Anleitungen:</strong> Texte, Fotos und PDF-Dateien, die du erstellst oder vorschlägst.
     Veröffentlichte Anleitungen zeigen keinen Namen; bei einem Vorschlag sehen die Admins, von wem er kommt.</li>
   <li><strong>Anträge und Abstimmungen:</strong> Anträge mit Beschreibung, Foto und erwarteten Kosten
@@ -46,8 +50,8 @@ Fragen zum Datenschutz richtest du an <a href="mailto:darligenapp@gmail.com">dar
   <li><strong>Kalender-Abo:</strong> ein persönlicher, geheimer Link, über den dein iPhone den
     Belegungsplan als Kalender abonnieren kann.</li>
   <li><strong>Blockierungen:</strong> welche Personen du blockiert hast. Das sieht nur du.</li>
-<li><strong>Mitteilungen:</strong> die Kennung deines iPhones für Mitteilungen und deine zwei Schalter
-    (Chat, Abstimmungen), siehe unten.</li>
+<li><strong>Mitteilungen:</strong> die Kennung deines iPhones für Mitteilungen und deine drei Schalter
+    (Chat, Abstimmungen, Termine am Haus), siehe unten.</li>
 <li><strong>Absturz- und Diagnoseberichte:</strong> siehe unten.</li>
 </ul>
 <p>Alle Inhalte sind nur für angemeldete Mitglieder sichtbar, nie öffentlich.</p>
@@ -59,13 +63,39 @@ dem iPhone und entfernt den Aufnahmeort.</p>
 
 <h2>Mitteilungen</h2>
 <p>Wenn du Mitteilungen erlaubst, meldet die App die Kennung deines iPhones an unseren Server.
-Bei einer neuen Chat-Nachricht, einer neuen Abstimmung und einem Abstimmungsergebnis schickt der
-Server eine Mitteilung über den Apple Push Notification Service (Apple) an dein iPhone. Der Text der
-Chat-Nachricht ist dann Teil der Mitteilung und läuft deshalb über Apple. Du kannst Chat- und
-Abstimmungs-Mitteilungen im Profil getrennt ausschalten oder in den iOS-Einstellungen ganz sperren.
+Der Server schickt dann Mitteilungen über den Apple Push Notification Service (Apple) an dein iPhone:
+bei einer neuen Chat-Nachricht (auch wenn dich jemand erwähnt), bei einer neuen Abstimmung, bei einem
+Abstimmungsergebnis, als Erinnerung vor Fristende, solange du noch nicht abgestimmt hast, und bei
+Terminen am Haus, wenn du laut Belegungsplan an diesem Tag im Haus bist (am Vorabend und am Morgen).
+Dafür vergleicht der Server die Termine mit dem Belegungsplan. Der Text der Chat-Nachricht ist Teil der
+Mitteilung und läuft deshalb über Apple. Liest du den Chat, bekommen deine anderen Geräte eine stille
+Mitteilung nur mit der neuen Zahl am App-Symbol. Du kannst Chat, Abstimmungen und Termine am Haus im
+Profil getrennt ausschalten oder Mitteilungen in den iOS-Einstellungen ganz sperren.
 Die Kennung wird beim Abmelden und beim Löschen deines Kontos entfernt.
 Beantragst du einen Zugang und erlaubst Mitteilungen, speichert der Server die Kennung mit der Anfrage,
 um dir die Freigabe zu melden; danach wird die Anfrage samt Kennung gelöscht.</p>
+
+<h2>Chat: Wer schreibt gerade, Linkvorschau</h2>
+<p>Während du im Chat tippst, schickt die App den anderen kurz das Zeichen, dass du schreibst. Der Inhalt
+geht dabei nicht mit, und gespeichert wird nichts.</p>
+<p>Sendest du einen Link, lädt dein iPhone die Webseite, um Titel und Bild für die Vorschau zu holen.
+Die Webseite sieht dabei, wie bei jedem Aufruf, die Internetadresse deines Geräts. Die Vorschau (Titel,
+Adresse, ein verkleinertes Bild) liegt danach mit deiner Nachricht auf dem Server. Wer die Nachricht
+erhält, sieht nur diese gespeicherte Vorschau; sein Gerät fragt die Webseite nicht an.</p>
+
+<h2>Wetter und Karten (Apple)</h2>
+<p>Das Wetter oben im Belegungsplan kommt von Apple Wetter (WeatherKit). Gefragt wird immer nach dem
+festen Ort Därligen, nie nach deinem Standort. Hat ein Eintrag in den Anleitungen eine Adresse, schickt
+die App diese Adresse an Apple Karten, um den Ort für den Kartenausschnitt zu finden. Beides geht von
+deinem iPhone direkt an Apple, ohne Konto- oder Personendaten; es gelten die Datenschutzbestimmungen
+von Apple. Die App fragt nie nach deinem Standort.</p>
+
+<h2>Daten auf deinem iPhone</h2>
+<p>Damit du den Belegungsplan, den Chat, die Anleitungen und die Anträge auch ohne Netz lesen kannst,
+legt die App eine Kopie dieser Inhalte samt Fotos und PDF-Dateien auf deinem iPhone ab. Was du ohne Netz
+sendest oder einträgst, wartet dort, bis die Verbindung zurück ist. Beim Abmelden und beim Löschen
+deines Kontos löscht die App diese Kopie vollständig. Ob du Tipps und das Blatt «Neu in dieser Version»
+schon gesehen hast, merkt sich nur das iPhone.</p>
 
 <h2>Absturz- und Diagnoseberichte</h2>
 <p>Stürzt die App ab oder hängt sie, schickt iOS einen Bericht an die App, und diese legt ihn auf
@@ -95,8 +125,8 @@ löschst (auch dein ganzes Konto), verschwinden deshalb in der Sicherung spätes
 <h2>Konto löschen</h2>
 <p>Du kannst dein Konto jederzeit selbst in der App löschen: <em>Profil → Konto löschen</em>.
 Dabei werden sofort gelöscht: dein Konto, Profil und Profilbild, deine Nachrichten und Fotos, Belegungen,
-laufende Abstimmungen und Traktanden, deine Stimmen, Anleitungsvorschläge, dein Kalender-Abo und deine
-Blockierungen.
+laufende Abstimmungen und Traktanden, deine Stimmen, Anleitungsvorschläge, dein Kalender-Abo, deine
+Blockierungen und dein Lesestand im Chat. Termine am Haus bleiben für alle stehen, aber ohne deinen Namen.
 Zwei Dinge bleiben für die anderen erhalten, aber ohne deinen Namen: bereits veröffentlichte Anleitungen
 und Abstimmungen, deren Frist abgelaufen ist (sie sind Beschlüsse der Familie; ihr Foto wird gelöscht).
 Das Ergebnis abgeschlossener Abstimmungen bleibt, wie es war, auch wenn deine Stimme gelöscht wird.
